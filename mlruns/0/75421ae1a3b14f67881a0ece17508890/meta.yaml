@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ojito/OneDrive/Desktop/EAN%20Maestria/Tercer%20Semestre/MLops/proyecto%20final/cicd-notebook-main/mlruns/0/75421ae1a3b14f67881a0ece17508890/artifacts
+end_time: 1746823420685
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 75421ae1a3b14f67881a0ece17508890
+run_name: silent-bug-371
+run_uuid: 75421ae1a3b14f67881a0ece17508890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746823414900
+status: 3
+tags: []
+user_id: Johanna

@@ -1,0 +1,7 @@
+papermill
+scikit-learn
+jupyter
+xgboost
+mlflow
+pyyaml
+pytest
