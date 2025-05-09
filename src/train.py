@@ -12,9 +12,13 @@ import pandas as pd
 import numpy as np
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, f1_score
-import mlflow
 import mlflow.sklearn
 from mlflow.models.signature import infer_signature
+import mlflow
+import os
+
+mlflow.set_tracking_uri("file:./mlruns")  # <--- esta línea evita errores de permisos
+
 
 
 # 2. Verificar y manejar valores nulos
