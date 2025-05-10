@@ -67,7 +67,15 @@ print(f"✅ F1 Score: {f1:.4f}")
 # --------------------------
 # 8. Registro con MLflow
 # --------------------------
-mlflow.set_tracking_uri("file:./mlruns")  # Compatible con GitHub Actions
+import shutil
+
+# Limpia la carpeta completamente si existe
+if os.path.exists("mlruns"):
+    shutil.rmtree("mlruns")
+
+mlflow.set_tracking_uri("file:./mlruns")  # Reestablece tracking
+mlflow.set_experiment("Default")  # Se asegura de usar la nueva ruta
+ # Compatible con GitHub Actions
 
 with mlflow.start_run():
     mlflow.log_param("n_estimators", 100)
